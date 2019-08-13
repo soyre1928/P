@@ -1,0 +1,53 @@
+a
+[1, 4, 3]
+b
+[1, 2, 3]
+a is b
+False
+a = [1,2,3]
+a = b
+a is b
+True
+a[1] = 4
+b
+[1, 4, 3]
+a = [1,2,3]
+b = a[:]
+a[1] = 4
+a
+[1, 4, 3]
+a
+[1, 4, 3]
+b
+[1, 2, 3]
+from copy import copy
+b = copy(a)
+b is a
+False
+a
+[1, 4, 3]
+b
+[1, 4, 3]
+a is b
+False
+a = [1,2,3]
+b = a[:]
+a is b
+False
+a,b = ('python','life')
+a
+'python'
+b
+'life'
+a = b = 'python'
+a
+'python'
+b
+'python'
+a = 3
+b = 5
+a,b = b,a
+a
+5
+b
+3
